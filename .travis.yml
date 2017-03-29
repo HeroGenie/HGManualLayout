@@ -2,11 +2,14 @@ language: objective-c
 osx_image: xcode8.2
 sudo : false
 
-# before_install:
-# - gem install bundler
- 
+before_install:
+ - gem install fastlane
+ # - gem install bundler
+
 # install:
 #  - pod install
+before_script:
+ - fastlane snapshot reset_simulators --force
 
 script:
  - xcodebuild clean build test -project HGManualLayout.xcodeproj -scheme HGManualLayout -destination "platform=iOS Simulator,name=iPhone 7,OS=10.2"
