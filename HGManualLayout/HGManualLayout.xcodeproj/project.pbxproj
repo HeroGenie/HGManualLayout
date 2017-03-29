@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		AB02D9461E8BCC1300272C40 /* HGManualLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB02D9441E8BCC1300272C40 /* HGManualLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB02D94D1E8BCFAE00272C40 /* HGManualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02D94C1E8BCFAE00272C40 /* HGManualLayout.swift */; };
+		AB02D9551E8BD09800272C40 /* HGManualLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02D9541E8BD09800272C40 /* HGManualLayoutTests.swift */; };
+		AB02D9571E8BD09800272C40 /* HGManualLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB02D9411E8BCC1300272C40 /* HGManualLayout.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB02D9581E8BD09800272C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB02D9381E8BCC1300272C40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB02D9401E8BCC1300272C40;
+			remoteInfo = HGManualLayout;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB02D9411E8BCC1300272C40 /* HGManualLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HGManualLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB02D9441E8BCC1300272C40 /* HGManualLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGManualLayout.h; sourceTree = "<group>"; };
 		AB02D9451E8BCC1300272C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB02D94C1E8BCFAE00272C40 /* HGManualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGManualLayout.swift; sourceTree = "<group>"; };
+		AB02D9521E8BD09800272C40 /* HGManualLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGManualLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB02D9541E8BD09800272C40 /* HGManualLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGManualLayoutTests.swift; sourceTree = "<group>"; };
+		AB02D9561E8BD09800272C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB02D94F1E8BD09800272C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB02D9571E8BD09800272C40 /* HGManualLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				AB02D9431E8BCC1300272C40 /* HGManualLayout */,
+				AB02D9531E8BD09800272C40 /* HGManualLayoutTests */,
 				AB02D9421E8BCC1300272C40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AB02D9411E8BCC1300272C40 /* HGManualLayout.framework */,
+				AB02D9521E8BD09800272C40 /* HGManualLayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				AB02D9441E8BCC1300272C40 /* HGManualLayout.h */,
+				AB02D94C1E8BCFAE00272C40 /* HGManualLayout.swift */,
 				AB02D9451E8BCC1300272C40 /* Info.plist */,
 			);
 			path = HGManualLayout;
+			sourceTree = "<group>";
+		};
+		AB02D9531E8BD09800272C40 /* HGManualLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB02D9541E8BD09800272C40 /* HGManualLayoutTests.swift */,
+				AB02D9561E8BD09800272C40 /* Info.plist */,
+			);
+			path = HGManualLayoutTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,41 @@
 			productReference = AB02D9411E8BCC1300272C40 /* HGManualLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AB02D9511E8BD09800272C40 /* HGManualLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB02D95A1E8BD09800272C40 /* Build configuration list for PBXNativeTarget "HGManualLayoutTests" */;
+			buildPhases = (
+				AB02D94E1E8BD09800272C40 /* Sources */,
+				AB02D94F1E8BD09800272C40 /* Frameworks */,
+				AB02D9501E8BD09800272C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB02D9591E8BD09800272C40 /* PBXTargetDependency */,
+			);
+			name = HGManualLayoutTests;
+			productName = HGManualLayoutTests;
+			productReference = AB02D9521E8BD09800272C40 /* HGManualLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AB02D9381E8BCC1300272C40 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = HeroGenie;
 				TargetAttributes = {
 					AB02D9401E8BCC1300272C40 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = R97XHLKC87;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					AB02D9511E8BD09800272C40 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = R97XHLKC87;
 						ProvisioningStyle = Automatic;
@@ -113,12 +175,20 @@
 			projectRoot = "";
 			targets = (
 				AB02D9401E8BCC1300272C40 /* HGManualLayout */,
+				AB02D9511E8BD09800272C40 /* HGManualLayoutTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB02D93F1E8BCC1300272C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB02D9501E8BD09800272C40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,10 +202,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB02D94D1E8BCFAE00272C40 /* HGManualLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB02D94E1E8BD09800272C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB02D9551E8BD09800272C40 /* HGManualLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB02D9591E8BD09800272C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB02D9401E8BCC1300272C40 /* HGManualLayout */;
+			targetProxy = AB02D9581E8BD09800272C40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AB02D9471E8BCC1300272C40 /* Debug */ = {
@@ -242,6 +329,28 @@
 		AB02D94A1E8BCC1300272C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R97XHLKC87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HGManualLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.herognie.HGManualLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AB02D94B1E8BCC1300272C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R97XHLKC87;
@@ -256,23 +365,28 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		AB02D94B1E8BCC1300272C40 /* Release */ = {
+		AB02D95B1E8BD09800272C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R97XHLKC87;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HGManualLayout/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = HGManualLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.herognie.HGManualLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.herognie.HGManualLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AB02D95C1E8BD09800272C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R97XHLKC87;
+				INFOPLIST_FILE = HGManualLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.herognie.HGManualLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -294,6 +408,14 @@
 			buildConfigurations = (
 				AB02D94A1E8BCC1300272C40 /* Debug */,
 				AB02D94B1E8BCC1300272C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB02D95A1E8BD09800272C40 /* Build configuration list for PBXNativeTarget "HGManualLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB02D95B1E8BD09800272C40 /* Debug */,
+				AB02D95C1E8BD09800272C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
